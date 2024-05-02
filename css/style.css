@@ -1,0 +1,137 @@
+ /* Existen 3 maneras de aplicar estilos
+ 
+ 1. En linea
+ 2. En el head del html
+ 3. En un archivo externo......(De tu proyecto o de otra fuente)
+ Iconos de Google-> Tamaños recomendados-> 18px | 24px | 36px | 48px*/
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+/* Estructura
+
+p-> etiqueta{
+
+    propiedad: valor;
+    propiedad: valor;
+    propiedad: valor;
+    propiedad: valor;
+}
+Tipos de selectores
+1. p, h1, div...
+2. # los id
+3. Las clases
+*/
+
+.contenedor{
+    width: 100%;
+    background-color: burlywood;
+    font-size: medium;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.letrazul{
+    color: blue;
+}
+
+/* Se puede especificar que una clase se aplique a elementos específicos de html */
+.contenido{
+    margin: auto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.centrado{
+    text-align: center;
+    border: 2px solid grey;
+    margin: auto;
+    color: grey;
+    padding: 80px;
+    font-size: 40px;
+    width: 100%;
+
+}
+.justificado{
+    padding:50px;
+    font-size: 20px;
+    border-left: 15px double grey;
+    margin: 0;
+    text-align: justify;
+    background-color: rgb(218, 218, 218);
+    height:auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.botones{
+    padding: 20px;
+    border-radius:20px;
+    background-color: rgb(30, 100, 250);
+    color: white;
+    border: none;
+    font-size: 20px;
+    margin-top: 20px;
+
+}
+.fondo{
+    height:500px;
+    background-image: url(../img/foto4gallina.jpg);
+    background-size: 80px;
+    background-attachment: fixed;
+}
+.fondo h2{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    background-color: rgb(0, 174, 255);
+    background-attachment: fixed;
+    
+}
+.centrado2{
+margin: auto;
+}
+.divmp p{
+    width: 50%;
+    margin: 25px;
+    padding: 25px;
+    
+}
+
+.divmp, .divmp p{
+  border: 1px solid blue;  
+}
+
+
+.col-s-1{width: 8.33%;}
+.col-s-2{width: 16.66%;}
+.col-s-3{width: 25%;}
+.col-s-4{width: 33.33%;}
+.col-s-5{width: 41.66%;}
+.col-s-6{width: 50%;}
+.col-s-7{width: 58.33%;}
+.col-s-8{width: 66.66%;}
+.col-s-9{width: 75%;}
+.col-s-10{width: 83.33%;}
+.col-s-11{width: 91.66%;}
+.col-s-12{width: 100%;}
+/* Importante agrupar las reglas con el objetivo de minimizar el codigo, es decir, si varios elementos tienen la misma propiedad o valor, agruparlos */
+/* Los estilos aplicados en linea tienen prioridad a los internos y externos
+
+Existen lo estilos de Agente(Estilos del Navegador)*/
+
+[class*=col-]{/*Todas las clasess que empiezan con col- se le aplica esa regla*/
+    display: flex;
+}
+
+.imgH{
+    opacity: 0.5;
+}
+.imgH:hover{
+    opacity: 1;
+    width: 33.33%;
+}
